@@ -24,9 +24,32 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/vendors/css/perfect-scrollbar.min.css",
+              "src/assets/vendors/css/prism.min.css",
+              "src/assets/vendors/css/switchery.min.css",
+              "src/assets/vendors/css/chartist.min.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/bootstrap-extended.css",
+              "src/assets/css/colors.css",
+              "src/assets/css/themes/layout-dark.css",
+              "src/assets/css/plugins/switchery.css",
+              "src/assets/css/core/menu/horizontal-menu.css",
+              "src/assets/css/pages/dashboard1.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/js/vendors.min.js",
+              "src/assets/vendors/js/switchery.min.js",
+              "src/assets/vendors/js/chartist.min.js",
+              "src/assets/js/core/app-menu.js",
+              "src/assets/js/core/app.js",
+              "src/assets/js/notification-sidebar.js",
+              "src/assets/js/customizer.js",
+              "src/assets/js/scroll-top.js",
+              "src/assets/js/dashboard1.js",
+              "src/assets/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +142,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontend"
+    }
+  },
+  "defaultProject": "frontend",
+  "cli": {
+    "analytics": "0bdcd2aa-e5b3-41fa-b209-fe8532f04a65"
+  }
 }

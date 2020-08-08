@@ -1,0 +1,20 @@
+<table class="table table-sm table-hover text-nowrap font-weight-normal">
+    <thead>
+        <tr>
+            <th class="table-success font-weight-normal">Désignation</th>
+            <th class="table-success disabled-sorting text-right font-weight-normal">Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of grades">
+            <td>{{ obj.Grade }}</td>
+            <td>
+                <button [routerLink]="['/clients/', obj.id]" title='Supprimer' class='btn btn-success btn-sm'><i
+                        class='fa fa-edit'></i> </button>&nbsp;
+                <button (click)="deleteGrades(obj.id)" title='Supprimer' class='btn btn-danger btn-sm'><i
+                        class='fa fa-times'></i> </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
